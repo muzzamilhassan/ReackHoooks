@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import { useState } from 'react'
 const Form = () => {
     const [email, setEmail] = useState('')
@@ -18,7 +19,9 @@ const Form = () => {
             alert('Fill All data')
         }
     }
-
+    useEffect(()=>{
+        document.title= `form.js`
+    },[])
   return (
     <div>
         <div className="log">
